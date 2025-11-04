@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #13162a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos del contenedor principal del conversor */
+.converter-container {
+  background-color: #e2e2e2;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Estilos del encabezado principal */
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0;
+  font-size: 1.8em;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 10px 0;
+}
+
+/* Estilos para el área de los controles */
+.controls-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre elementos */
+  align-items: flex-start; /* Alinea etiquetas a la izquierda */
+}
+
+.controls-area p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* Estilos para entradas y select */
+#clpInput,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #111111;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+/* Estilos del botón */
+#convertButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #17477f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+#convertButton:hover {
+  background-color: #133965;
+}
+
+#convertButton:active {
+  transform: translateY(1px);
+}
+
+/* Estilos para el resultado */
+#result {
+  width: 100%;
+  margin-top: 25px;
+  font-size: 1.6em;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.grafica {
+  padding: 50px 0px;
+  width: 100%;
+  max-width: 640px;
+  height: 400px;
+  margin: 0 auto;
+}
